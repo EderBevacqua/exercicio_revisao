@@ -1,3 +1,3 @@
-# LMS-1
+# exercico_revisao AC-TecWeb
 
-# Git Pages - https://ederbevacqua.github.io/LMS-1/
+# Git Pages - https://ederbevacqua.github.io/exercico_revisao/
