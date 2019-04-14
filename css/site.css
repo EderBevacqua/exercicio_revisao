@@ -1,80 +1,82 @@
 @media only screen and (max-device-width: 900px) {
     h1 {
-        font-size:30px;
+        font-size: 30px;
     }
-    
+
     p {
         font-size: 20pt;
     }
-    .headerBody img{
+
+    .headerBody img {
         width: 100%;
     }
-   
+
     table, th, td {
-        font-size:14px;
+        font-size: 14px;
+    }
+    .tabelaForm {
+        width: 500px;
     }
 }
 
 @media only screen and (max-device-width: 500px) {
 
     h1 {
-        font-size:23px;
-    }
-    h3 {
-        font-size: 16px;
-        padding:0;
-    }
-    .headerBody img {
-        width: 100%;
+        font-size: 23px;
     }
 
-    nav ul{
-        width:200px;
+    h3 {
+        font-size: 16px;
+        padding: 0;
     }
+
+    .headerBody img {
+        width: 90%;
+    }
+
     .menu a {
         font-size: 8pt;
     }
-    
+
     table, th, td {
         font-size: 10px;
     }
+
     input {
         font-size: 12px;
         width: 100px;
     }
-
+    .tabelaForm {
+        width: auto;
+    }
 }
 
 h1 {
     margin: 20px 0px 0px 0px;
-    clear:both;
+    clear: both;
 }
 h3 {
-    margin:0;
-    padding:2px;
+    margin: 0;
+    padding: 2px;
 }
-
 body {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 .sections {
     margin: 0 auto;
     max-width: 900px;
-    padding:10px;
+    padding: 5px;
 }
-
 p {
-    font-family:'Times New Roman';
-    font-size:14px;  
+    font-family: 'Times New Roman';
+    font-size: 14px;
 }
-
 .headerBody {
     border-bottom: 2px solid;
     border-color: black;
     display: -webkit-flex;
     justify-content: center;
-    
 }
 .headerTopo {
     background: blue;
@@ -86,49 +88,48 @@ p {
     text-align: center;
     font-size: 18pt;
     width: 450px;
-    margin:0 auto;
+    margin: 0 auto;
+    display: -webkit-box;
 }
 
     .menu ul {
-        margin:0;
-        padding:10px;
+        margin: 0;
+        padding: 10px;
     }
-        .menu li {
-            display: inline;
-            border:1px solid;
-            border-radius: 5px
-        }
-
-    .menu li a {
-        text-decoration: none;
-        color:white;
-        font-weight:bold;
+    .menu li {
+        display: inline-block;
+        border: 1px solid;
+        border-radius: 5px;
+        box-shadow: inset 0 2px 5px #fff, 0 2px 4px #2b2b2b;
     }
-        .menu li a:hover {
-            background:red;
-            border-radius:5px;
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            
         }
-        .menu li a:active {
-            background:green;
-        }
+                .menu li a:hover {
+                    background: red;
+                    border-radius: 5px;
+                }
+                .menu li a:active {
+                    background: green;
+                }
 
-.section1p{
-    float: left;
-    padding: 5px;
-    margin:0;
+.section1p {
+    margin: 0;
 }
 
-img {
-    float:left;
-    padding-right:5px;
+.Sec1img {
+    float: left;
+    padding-right: 5px;
 }
 
 .p2Section1 {
-    width: 45%;
+    width: 50%;
+    float:left;
+    padding-right:4px;
 }
-.p3Section1 {
-    width: 45%;
- }
 
 .listaOrdenada {
     background: gray;
@@ -142,9 +143,6 @@ img {
     padding: 3px;
 }
 
-.section2 {
-    
-}
     .section2 ul {
         padding: 5px;
         border: 1px solid;
@@ -174,7 +172,6 @@ img {
             color: red;
         }
 
-
 .section3 {
     border: 1px solid;
     border-color: black;
@@ -183,7 +180,6 @@ img {
 
 .formulario {
     padding: 3px;
-    width: 500px;
     text-align: left;
 }
     .formulario * {
@@ -197,11 +193,15 @@ input:focus {
     background: #57c659;
 }
 
-table, tr{
+.tabelaForm {
+    margin: 0 auto;
+}
+
+table, tr {
     border: 2px solid;
     border-color: black;
-    width:100%;
-    text-align:center;
+    width: 500px;
+    text-align: center;
 }
     table th {
         background:black;
