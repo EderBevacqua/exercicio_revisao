@@ -1,6 +1,7 @@
 @media only screen and (max-device-width: 900px) {
     h1 {
         font-size: 27px;
+        margin-top: 13px;
     }
     p {
         font-size: 13px;
@@ -25,6 +26,7 @@
 
     h1 {
         font-size: 17px;
+        margin-top: 10px;
     }
 
     h3 {
@@ -34,6 +36,7 @@
 
     .headerBody img {
         width: 90%;
+        padding-top:5px;
     }
 
     .menu a {
@@ -54,7 +57,6 @@
 }
 
 h1 {
-    margin: 13px 0px 0px 0px;
     clear: both;
 }
 h3 {
@@ -65,11 +67,7 @@ body {
     padding: 0;
     margin: 0;
 }
-.sections {
-    margin: 0 auto;
-    max-width: 900px;
-    padding: 5px;
-}
+
 p {
     font-family: 'Times New Roman';
     font-size: 14px;
@@ -116,9 +114,14 @@ p {
                     background: green;
                 }
 
-.section1p {
-    margin: 0;
+.sections {
+    margin: 0 auto;
+    max-width: 900px;
+    padding:3px;
 }
+/*.section1p {
+    padding: 0;
+}*/
 
 .Sec1img {
     float: left;
@@ -172,18 +175,16 @@ p {
             color: red;
         }
 
-.section3 {
+.bordaPreta {
     border: 1px solid;
     border-color: black;
-    padding: 10px;
 }
 
 .formulario {
     padding: 3px;
     text-align: left;
-    border-color: black;
-    border: 2px solid;
-    box-shadow: darkslategrey 1px 1px 5px 3px;
+    box-shadow: darkslategrey 1px 1px 6px 3px;
+    margin:10px;
 }
     .formulario * {
         margin: 5px;

@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="ISO-8859-1" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/site.css" />
     <title>Exercício de Revisão</title>
 </head>
-<body onload="tableList()">
+<body>
     <header class="headerTopo">
         <div class="headerBody">
             <a href="index.html">
@@ -65,46 +65,46 @@
         </section>
         <h1>Seção 2</h1>
         <section class="section2" id="section2">
-            <div class="listaNordenada">
+            <div class="listaNordenada bordaPreta">
                 <h3>lista não ordenada</h3>
                 <ul>
-                    <li data-value="Feijoada" onclick="ul_li(this)">Feijoada</li>
-                    <li data-value="Leite" onclick="ul_li(this)">Leite</li>
-                    <li data-value="Manga" onclick="ul_li(this)">Manga</li>
-                    <li data-value="Topeira" onclick="ul_li(this)">Topeira</li>
+                    <li data-value="Feijoada">Feijoada</li>
+                    <li data-value="Leite">Leite</li>
+                    <li data-value="Manga">Manga</li>
+                    <li data-value="Topeira">Topeira</li>
                 </ul>
             </div>
-            <div class="listaOrdenada">
+            <div class="listaOrdenada bordaPreta">
                 <h3>lista ordenada</h3>
                 <ol>
-                    <li data-value="Café" onclick="ol_li(this)">Café</li>
-                    <li data-value="Leite" onclick="ol_li(this)">Leite</li>
-                    <li data-value="Pão" onclick="ol_li(this)">Pão</li>
-                    <li data-value="Chá" onclick="ol_li(this)">Chá</li>
+                    <li data-value="Café">Café</li>
+                    <li data-value="Leite">Leite</li>
+                    <li data-value="Pão">Pão</li>
+                    <li data-value="Chá">Chá</li>
                 </ol>
             </div>
         </section>
         <h1>Seção 3</h1>
-        <section class="section3" id="section3">
+        <section class="section3 bordaPreta" id="section3">
             <form action="" method="post" name="form1" id="form1" class="formulario" onsubmit="return validaform();">
                 <label>Nome Completo</label><br />
-                <input id="nome" type="text" name="nome" placeholder="Informe Seu Nome Completo" onfocusout="focusInput(this)" onkeypress="return blockEnterForm()"/><br />
+                <input id="nome" type="text" name="nome" placeholder="Informe Seu Nome Completo" onkeydown="return blockEnterTabForm()" /><br />
                 <label>Cor Favorita</label><br />
                 <input type="color" name="corFavorita" id="corFavorita" onfocusout="focusInput(this)" /><br />
                 <label>Nascimento</label><br />
-                <input type="date" name="dNascimento" id="dNascimento" onfocusout="focusInput(this)" onkeypress="return blockEnterForm()"/><br />
+                <input type="date" name="dNascimento" id="dNascimento" onfocusout="focusInput(this)" onkeydown="return blockEnterTabForm()"/><br />
                 <label>Salário</label><br />
-                <input type="number" name="salario"id="salario" placeholder="Informe seu salário" onfocusout="focusInput(this)" onkeypress="return blockEnterForm()"/><br />
+                <input type="number" name="salario"id="salario" placeholder="Informe seu salário" onfocusout="focusInput(this)" onkeydown="return blockEnterTabForm()"/><br />
                 <input type="submit" name="Submit" value="Enviar"/>
                 <input type="reset" name="Reset" value="Limpar" />
             </form>
         </section>
         <h1>Seção 4</h1>
         <section class="section4" id="section4">
-            <table class="tabelaForm" id="tabelaForm">
+            <table class="tabelaForm bordaPreta" id="tabelaForm">
                 <tr>
                     <th>Nome</th>
-                    <th>Cod-Cor Favorita</th>
+                    <th>Cor Favorita</th>
                     <th>Nascimento</th>
                     <th>Salário</th>
                 </tr>
