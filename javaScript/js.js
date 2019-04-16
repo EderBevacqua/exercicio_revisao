@@ -106,8 +106,7 @@ function validaform() {
 
     var lexcl = document.getElementById("tabelaForm").getElementsByTagName("tr");
     for (var i = 0; i < lexcl.length; i++) {
-        lexcl[i].addEventList
-        ener("click", exclRow)
+        lexcl[i].addEventListener("click", exclRow)
         function exclRow() {
             if (this != lexcl[0]) {
                 this.parentNode.removeChild(this);
@@ -121,8 +120,7 @@ function validaform() {
 
 var lexcl = document.getElementById("tabelaForm").getElementsByTagName("tr");
 for (var i = 0; i < lexcl.length; i++) {
-    lexcl[i].addEventList
-    ener("click", exclRow)
+    lexcl[i].addEventListener("click", exclRow)
     function exclRow() {
         if (this != lexcl[0]) {
             this.parentNode.removeChild(this);
