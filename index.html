@@ -88,7 +88,7 @@
         <section class="section3 bordaPreta" id="section3">
             <form action="" method="post" name="form1" id="form1" class="formulario" onsubmit="return validaform();">
                 <label>Nome Completo</label><br />
-                <input id="nome" type="text" name="nome" placeholder="Informe Seu Nome Completo" onkeydown="return blockEnterTabForm()" /><br />
+                <input id="nome" type="text" name="nome" placeholder="Informe Seu Nome Completo" onfocusout="focusInput(this)" onkeydown="return blockEnterTabForm()" /><br />
                 <label>Cor Favorita</label><br />
                 <input type="color" name="corFavorita" id="corFavorita" onfocusout="focusInput(this)" /><br />
                 <label>Nascimento</label><br />

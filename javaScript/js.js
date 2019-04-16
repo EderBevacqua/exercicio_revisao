@@ -3,7 +3,7 @@ document.getElementById("imgLogo").addEventListener("click", function () { conso
 var lDeso = document.querySelectorAll("div ul li");
 lDeso.forEach(function (ul) {
     ul.addEventListener("click", function () {
-        let v = this.getAttribute("data-value");
+        var v = this.getAttribute("data-value");
         alert("Item Desordenado: " + v + ".");
     });
 });
@@ -11,7 +11,7 @@ lDeso.forEach(function (ul) {
 var lOrd = document.querySelectorAll("div ol li");
 lOrd.forEach(function (ol) {
     ol.addEventListener("click", function () {
-        let v = this.getAttribute("data-value");
+        var v = this.getAttribute("data-value");
         alert("Item Ordenado: " + v + ".");
     });
 });
@@ -56,8 +56,7 @@ function focusInput(a) {
                 break;
             }
             else {
-                let s = document.getElementsByName("Submit")
-                s.focus()
+                break;
             }
     }
 
@@ -82,19 +81,19 @@ function validaform() {
         return false;
     }
 
-    let tabela = document.getElementById("tabelaForm");
-    let tr1 = document.createElement("tr");
-    let conteudoNovoNome = document.createTextNode(nome.value);
-    let conteudoNovoCor = document.createTextNode(corfavorita.value);
-    let conteudoNovoNasc = document.createTextNode(nascimento.value.split('-').reverse().join('/'));
-    let conteudoNovoSalar = document.createTextNode(salario.value);
+    var tabela = document.getElementById("tabelaForm");
+    var tr1 = document.createElement("tr");
+    var conteudoNovoNome = document.createTextNode(nome.value);
+    var conteudoNovoCor = document.createTextNode(corfavorita.value);
+    var conteudoNovoNasc = document.createTextNode(nascimento.value.split('-').reverse().join('/'));
+    var conteudoNovoSalar = document.createTextNode(salario.value);
 
-    let td1 = document.createElement("td");
-    let td2 = document.createElement("td");
-    let td3 = document.createElement("td");
-    let td4 = document.createElement("td");
+    var td1 = document.createElement("td");
+    var td2 = document.createElement("td");
+    var td3 = document.createElement("td");
+    var td4 = document.createElement("td");
 
-    let l = document.getElementById("tabelaForm").getElementsByTagName("tr").length;
+    var l = document.getElementById("tabelaForm").getElementsByTagName("tr").length;
 
     if (l <= 5) {
         td1.appendChild(conteudoNovoNome);
@@ -111,7 +110,7 @@ function validaform() {
         alert("Você não pode adicionar mais dados");
     }
 
-    let lexcl = document.querySelectorAll("table tr")
+    var lexcl = document.querySelectorAll("table tr")
     lexcl.forEach(function (l) {
         l.addEventListener("click", exclRow)
         function exclRow() {
@@ -125,8 +124,8 @@ function validaform() {
     return false;
 }
 
-let lexcl = document.querySelectorAll("table tr")
-for (let i = 0; i < lexcl.length; i++) {
+var lexcl = document.querySelectorAll("table tr")
+for (var i = 0; i < lexcl.length; i++) {
     lexcl[i].addEventListener("click", exclRow)
     function exclRow() {
         if (this != lexcl[0]) {
@@ -136,7 +135,7 @@ for (let i = 0; i < lexcl.length; i++) {
 }
 
 function blockEnterTabForm() {
-    return !(window.event && window.event.keyCode == 13 || window.event && window.event.keyCode == 9)
+    return !(window.event && window.event.keyCode == 13 || window.event && window.event.keyCode == 9);
 }
 
 
