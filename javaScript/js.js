@@ -1,20 +1,14 @@
 document.getElementById("imgLogo").addEventListener("click", function () { console.log("Logo Clicado!"); });
 
-var lDeso = document.querySelectorAll("div ul li");
-lDeso.forEach(function (ul) {
-    ul.addEventListener("click", function () {
-        var v = this.getAttribute("data-value");
-        alert("Item Desordenado: " + v + ".");
-    });
-});
+function ul_li(vl) {
+    var v = vl.getAttribute("data-value");
+    alert("Item Desordenado: " + v + ".");
+}
 
-var lOrd = document.querySelectorAll("div ol li");
-lOrd.forEach(function (ol) {
-    ol.addEventListener("click", function () {
-        var v = this.getAttribute("data-value");
-        alert("Item Ordenado: " + v + ".");
-    });
-});
+function ol_li(vl) {
+    var v = vl.getAttribute("data-value");
+    alert("Item Ordenado: " + v + ".");
+}
 
 var formulario = document.getElementById("form1");
 var nome = document.getElementById("nome");
@@ -110,23 +104,25 @@ function validaform() {
         alert("Você não pode adicionar mais dados");
     }
 
-    var lexcl = document.querySelectorAll("table tr")
-    lexcl.forEach(function (l) {
-        l.addEventListener("click", exclRow)
+    var lexcl = document.getElementById("tabelaForm").getElementsByTagName("tr");
+    for (var i = 0; i < lexcl.length; i++) {
+        lexcl[i].addEventList
+        ener("click", exclRow)
         function exclRow() {
             if (this != lexcl[0]) {
                 this.parentNode.removeChild(this);
             }
         }
-    });
+    }
     
     document.getElementById("form1").reset();
     return false;
 }
 
-var lexcl = document.querySelectorAll("table tr")
+var lexcl = document.getElementById("tabelaForm").getElementsByTagName("tr");
 for (var i = 0; i < lexcl.length; i++) {
-    lexcl[i].addEventListener("click", exclRow)
+    lexcl[i].addEventList
+    ener("click", exclRow)
     function exclRow() {
         if (this != lexcl[0]) {
             this.parentNode.removeChild(this);
