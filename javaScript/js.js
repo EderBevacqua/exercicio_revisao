@@ -26,7 +26,7 @@ function focusInput(a) {
                 break;
             }
             else {
-                corfavorita.focus();
+                break;
             }
         case "corFavorita":
             if (corfavorita.value == "") {
@@ -42,7 +42,7 @@ function focusInput(a) {
                 break;
             }
             else {
-                salario.focus;
+                break;
             }
         case "salario":
             if (salario.value == "") {
